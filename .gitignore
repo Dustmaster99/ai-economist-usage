@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Virtual environments and local configuration
+.venv/
+.env
+.env.*
+
+# Generated artifacts
+artifacts/
+checkpoints/
+logs/
+mlruns/
+outputs/
+runs/
+wandb/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# uv cache
+.uv/

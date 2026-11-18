@@ -1,0 +1,32 @@
+[project]
+name = "ai-economist-experiments"
+version = "0.1.0"
+description = "Experiments using the AI Economist framework"
+readme = "README.md"
+requires-python = ">=3.8,<3.9"
+dependencies = [
+    "ai-economist==1.7.1",
+    "pyyaml>=5.4.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==6.2.4",
+    "ruff>=0.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["UP045"] # PEP 604 union syntax is not parsable by the required Python 3.8.
+
+[tool.uv]
+prerelease = "allow"
+constraint-dependencies = ["pywinpty==2.0.13"]
+

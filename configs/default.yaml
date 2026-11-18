@@ -1,0 +1,9 @@
+project:
+  name: ai-economist
+  seed: 42
+
+environment:
+  name: default
+
+training:
+  episodes: 10
